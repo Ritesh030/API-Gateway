@@ -35,7 +35,7 @@ const verifyToken = async (req, res, next) => {
         }
 
         const response = await axios.get(
-            `${SERVICE_URLS.AUTH_SERVICE}/api/v1/isAuthenticated`,
+            `${SERVICE_URLS.AUTH_SERVICE}/api/v1/auth/isAuthenticated`,
             { headers: { 'x-access-token': token } }
         );
 
